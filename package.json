@@ -1,8 +1,8 @@
 {
   "name": "@autenai/mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Computer use MCP server: give Claude Code, Codex, Cursor or any MCP client hands on your Mac, Windows or Linux desktop.",
-  "mcpName": "io.github.auten-ai/auten-mcp",
+  "mcpName": "ai.auten/mcp",
   "type": "module",
   "bin": {
     "auten-mcp": "bin/auten-mcp.js"
