@@ -1,0 +1,43 @@
+{
+  "name": "@autenai/mcp",
+  "version": "0.1.0",
+  "description": "Computer use MCP server: give Claude Code, Codex, Cursor or any MCP client hands on your Mac, Windows or Linux desktop.",
+  "mcpName": "io.github.auten-ai/auten-mcp",
+  "type": "module",
+  "bin": {
+    "auten-mcp": "bin/auten-mcp.js"
+  },
+  "files": [
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "computer-use",
+    "claude-code",
+    "codex",
+    "cursor",
+    "desktop-automation",
+    "ai-agent",
+    "macos",
+    "windows",
+    "linux"
+  ],
+  "homepage": "https://auten.ai/mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auten-ai/auten-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/auten-ai/auten-mcp/issues",
+    "email": "hello@auten.ai"
+  },
+  "author": "MB Icecode <hello@auten.ai> (https://auten.ai)",
+  "license": "MIT"
+}

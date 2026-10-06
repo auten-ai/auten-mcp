@@ -11,6 +11,10 @@
 </p>
 
 <p align="center">
+  <a href="https://www.npmjs.com/package/@autenai/mcp"><img src="https://img.shields.io/npm/v/@autenai/mcp?color=00997A&label=npm" alt="npm" /></a>
+</p>
+
+<p align="center">
   <a href="https://auten.ai/mcp">Website</a> &nbsp;|&nbsp;
   <a href="https://auten.ai/connect">Setup for every client</a> &nbsp;|&nbsp;
   <a href="https://auten.ai/pricing">Pricing</a> &nbsp;|&nbsp;
@@ -65,9 +69,26 @@ claude mcp add -s user auten -- auten mcp-bridge
 **3. Ask in plain words.** For example: *"Open Figma, export the Hero frame as PNG to my Desktop"*
 or *"Go through the unread invoices in my mail and fill them into the accounting app"*.
 
+### Or run it through npx
+
+Any client that can start an npm package can use the launcher instead. It starts the installed
+runner, and if Auten is not installed yet it tells your agent the one-line install command.
+
+```json
+{
+  "mcpServers": {
+    "auten": { "command": "npx", "args": ["-y", "@autenai/mcp"] }
+  }
+}
+```
+
+```bash
+claude mcp add -s user auten -- npx -y @autenai/mcp
+```
+
 ## Client setup
 
-Every client starts the same stdio command: `auten mcp-bridge`. If your app says it cannot find
+Every client starts the same stdio command: `auten mcp-bridge` (or `npx -y @autenai/mcp`). If your app says it cannot find
 `auten`, use the full path from `which auten` (usually `~/.local/bin/auten`).
 
 <details>
@@ -241,8 +262,8 @@ You bring your own AI, so the price is for Auten only. Details on [auten.ai/pric
 
 ## About this repository
 
-This repository holds the public docs and client configs for the Auten MCP server. The runner
-itself is distributed through the installers above. Questions, bugs and feature requests are
+This repository holds the public docs, client configs and the `@autenai/mcp` npm launcher
+(`bin/auten-mcp.js`, MIT). The runner itself is distributed through the installers above. Questions, bugs and feature requests are
 welcome as [issues](https://github.com/auten-ai/auten-mcp/issues) or at hello@auten.ai.
 
 Auten is made by [MB Icecode](https://icecode.lt), Lithuania.
