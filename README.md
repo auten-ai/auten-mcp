@@ -43,6 +43,16 @@ What makes it different from a plain mouse and keyboard bridge:
 - **Passwords stay on your machine.** `fill_login` types a stored secret into a field without the
   agent ever seeing the value.
 
+## What you can ask your agent
+
+Plain requests in the client you already use. The agent decides the steps, Auten does the clicks.
+
+- "Open the supplier portal, download this month's invoices and put them in ~/Invoices."
+- "Go through the new leads in the CRM and fill in the missing company names from their emails."
+- "Export the report from that desktop app as CSV. It has no API, so use the File menu."
+- "On my Android phone, open Instagram and reply to the latest DM with this text." (phone is beta, over USB)
+- "That worked. Save it as a skill called `export-report`." Next time: "Run `export-report`." It replays without AI.
+
 ## Quick start
 
 **1. Install the runner** (one command, no admin rights):
