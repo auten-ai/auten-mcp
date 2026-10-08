@@ -278,7 +278,8 @@ You bring your own AI, so the price is for Auten only. Details on [auten.ai/pric
 ## About this repository
 
 This repository holds the public docs, client configs and the `@autenai/mcp` npm launcher
-(`bin/auten-mcp.js`, MIT). The runner itself is distributed through the installers above. Questions, bugs and feature requests are
+(`bin/auten-mcp.js`), all under the MIT [LICENSE](LICENSE). The runner itself is distributed
+separately through the installers above, under the [Auten terms of service](https://auten.ai/terms). Questions, bugs and feature requests are
 welcome as [issues](https://github.com/auten-ai/auten-mcp/issues) or at hello@auten.ai.
 
 Auten is made by [MB Icecode](https://icecode.lt), Lithuania.
