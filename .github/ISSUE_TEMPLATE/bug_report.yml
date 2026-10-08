@@ -1,0 +1,36 @@
+name: Bug report
+description: Something did not work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you asked the agent to do, and what Auten did instead.
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: MCP client
+      placeholder: Claude Code, Codex, Cursor, Claude Desktop...
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: macOS 15, Windows 11, Ubuntu 24.04, Android (beta)...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: "@autenai/mcp version"
+      placeholder: 0.1.2
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error output
+      description: Paste any error text. Remove passwords, keys and personal data first.
+      render: text
