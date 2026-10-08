@@ -7,7 +7,7 @@
 <p align="center">
   <b>Computer use for the AI agent you already have.</b><br />
   Claude Code, Codex, Cursor, Gemini CLI or any MCP client can click, type and read the screen
-  on your Mac, Windows or Linux computer, in real apps that have no API.
+  on your Mac, Windows or Linux computer — and your Android phone (beta) — in real apps that have no API.
 </p>
 
 <p align="center">
