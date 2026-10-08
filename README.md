@@ -21,6 +21,11 @@
   <a href="mailto:hello@auten.ai">hello@auten.ai</a>
 </p>
 
+<p align="center">
+  <img src="assets/demo.gif" alt="Animation: Claude Code asks Auten to reply on Instagram; Auten opens the app, finds the chat and sends. The next run replays the same task from memory in seconds, with no tokens." width="720" /><br />
+  <sub>Illustration: the first run is driven by your AI, the next runs replay from memory.</sub>
+</p>
+
 ---
 
 Auten is the hands, your AI is the brain. A small runner on your computer does the clicking,
