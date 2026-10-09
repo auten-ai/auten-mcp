@@ -17,6 +17,8 @@ open source.
 - Stored passwords live in the system keychain (macOS, Windows) or a private local vault (Linux)
   and never reach our servers or the model. A secret that shows up on screen is replaced with a
   placeholder before your agent sees it.
+- Each saved login is pinned to the site or app where it was first used. On any other origin
+  `fill_login` refuses and types nothing; only you can re-pin it (`auten vault unpin <name>`).
 - Your activity history and learned skills are written to your own computer, not ours.
 
 See the [privacy policy](https://auten.ai/privacy).
