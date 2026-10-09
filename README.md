@@ -45,6 +45,11 @@ What makes it different from a plain mouse and keyboard bridge:
 - **Passwords stay on your machine.** `fill_login` types a stored secret into a field without the
   agent ever seeing the value.
 
+<p align="center">
+  <img src="assets/real-replay.gif" alt="Real screen capture: an AI agent fills a local contact form through Auten MCP in about 14 seconds and saves it as a skill; run_skill then replays it with new values in 4.8 seconds without calling the model." width="640" /><br />
+  <sub>Real capture, not an illustration: first run by the agent (~14 s incl. thinking), then <code>run_skill</code> with new values (4.8 s, no model call). Local test page, 1 fps, one cut between the runs.</sub>
+</p>
+
 ## What you can ask your agent
 
 Plain requests in the client you already use. The agent decides the steps, Auten does the clicks.
