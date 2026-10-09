@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
+  - name: Question or setup help
+    url: https://github.com/auten-ai/auten-mcp/discussions/categories/q-a
+    about: Ask how to set up Auten with your MCP client, or share a task you want it to do.
   - name: Security report
     url: https://github.com/auten-ai/auten-mcp/blob/main/SECURITY.md
     about: Please report vulnerabilities by email, not in a public issue.
