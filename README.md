@@ -12,6 +12,8 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@autenai/mcp"><img src="https://img.shields.io/npm/v/@autenai/mcp?color=00997A&label=npm" alt="npm" /></a>
+  <a href="https://cursor.com/en/install-mcp?name=auten&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBhdXRlbmFpL21jcCJdfQ%3D%3D"><img src="https://cursor.com/deeplink/mcp-install-dark.svg" alt="Add Auten to Cursor" height="20" /></a>
+  <a href="https://vscode.dev/redirect/mcp/install?name=auten&config=%7B%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40autenai%2Fmcp%22%5D%7D"><img src="https://img.shields.io/badge/VS_Code-Add_Auten-0098FF?logo=visualstudiocode&logoColor=white" alt="Add Auten to VS Code" /></a>
 </p>
 
 <p align="center">
@@ -88,6 +90,7 @@ or *"Go through the unread invoices in my mail and fill them into the accounting
 
 Any client that can start an npm package can use the launcher instead. It starts the installed
 runner, and if Auten is not installed yet it tells your agent the one-line install command.
+The "Add to Cursor" and "VS Code" buttons at the top add exactly this entry.
 
 ```json
 {
