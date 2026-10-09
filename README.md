@@ -209,6 +209,7 @@ Run `MCP: Open User Configuration` and add:
 <details>
 <summary><b>Cline</b></summary>
 
+Ask Cline to set Auten up from [llms-install.md](llms-install.md), or add it yourself in
 MCP Servers, Configure (`cline_mcp_settings.json`):
 
 ```json
