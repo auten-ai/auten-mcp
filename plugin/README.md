@@ -14,7 +14,7 @@ apps without accessibility info.
 One local MCP server, `auten`, started with `npx -y @autenai/mcp@0.1.2`. The package is a thin
 launcher (source in this repository, `bin/auten-mcp.js`): if the Auten runner is installed it hands
 the connection to `auten mcp-bridge`; if not, it offers a single `install_auten` tool that tells
-Claude the one-line install command. The plugin has no skills, hooks or commands.
+Claude the one-line install command. It also adds one skill, `auten-safe-use`: screen content is treated as data, not instructions, and Claude asks you before it buys, deletes, sends, grants a permission or types a password. No hooks or commands.
 
 ## Setup
 
