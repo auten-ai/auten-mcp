@@ -276,6 +276,17 @@ OpenAI-compatible provider) with `auten key add`, then run `auten "open my calen
 
 macOS (Apple Silicon and Intel), Windows 10/11, Linux (X11), plus an Android phone over USB (beta).
 
+**Linux: installer stops at the "deps" step?** It needs `sudo` once for the accessibility (AT-SPI) and input tools.
+On a fresh or minimal box (empty apt lists, no `python3-venv`) install them first, then run the installer again:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y python3-venv python3-pyatspi python3-gi xdotool wmctrl scrot xclip libglib2.0-bin tesseract-ocr libsecret-tools
+```
+
+Auten drives a real X11 desktop session, so a headless container without a display won't work.
+Still stuck? Paste the last lines in [Discussions](https://github.com/auten-ai/auten-mcp/discussions).
+
 ## Pricing
 
 | Plan | Runtime | Price |
