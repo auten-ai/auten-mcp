@@ -6,7 +6,7 @@ and, in beta, an Android phone over USB.
 
 Auten has two parts:
 
-- the **runner**, installed once per computer with a one-line installer (no admin rights);
+- the **runner**, installed once per computer with a one-line installer (no admin rights on macOS and Windows; on Linux it uses `sudo apt-get` once for `python3-venv`, AT-SPI and input tools, so on a machine without sudo install those packages first);
 - this MCP server entry, which starts `auten mcp-bridge` over stdio.
 
 ## Step 1: install the runner

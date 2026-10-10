@@ -62,7 +62,7 @@ Plain requests in the client you already use. The agent decides the steps, Auten
 
 ## Quick start
 
-**1. Install the runner** (one command, no admin rights):
+**1. Install the runner** (one command; no admin rights on macOS and Windows, on Linux it asks for `sudo` once to apt-install the accessibility and input tools):
 
 ```bash
 # macOS and Linux
