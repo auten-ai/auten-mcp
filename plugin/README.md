@@ -18,7 +18,7 @@ Claude the one-line install command. The plugin has no skills, hooks or commands
 
 ## Setup
 
-1. Install the plugin.
+1. Install the plugin: `/plugin marketplace add auten-ai/auten-mcp`, then `/plugin install auten@auten`.
 2. Install the runner once (no admin rights), then restart Claude Code:
    - macOS and Linux: `curl -fsSL https://auten.ai/install | bash`
    - Windows (PowerShell): `irm https://auten.ai/install.ps1 | iex`

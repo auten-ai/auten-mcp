@@ -1,0 +1,20 @@
+{
+  "name": "auten",
+  "owner": {
+    "name": "Auten",
+    "email": "hello@auten.ai"
+  },
+  "metadata": {
+    "description": "Auten computer-use MCP server packaged as a Claude Code plugin."
+  },
+  "plugins": [
+    {
+      "name": "auten",
+      "source": "./plugin",
+      "description": "Computer use for Claude Code: click, type and read the screen on your Mac, Windows or Linux computer and your Android phone (beta), even in apps with no API.",
+      "version": "0.1.2",
+      "homepage": "https://auten.ai/mcp",
+      "license": "MIT"
+    }
+  ]
+}

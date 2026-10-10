@@ -109,6 +109,17 @@ The "Add to Cursor" and "VS Code" buttons at the top add exactly this entry.
 claude mcp add -s user auten -- npx -y @autenai/mcp
 ```
 
+### Or as a Claude Code plugin
+
+This repository is also a plugin marketplace. Inside Claude Code:
+
+```
+/plugin marketplace add auten-ai/auten-mcp
+/plugin install auten@auten
+```
+
+The plugin adds the same npx launcher entry, nothing else (no hooks or commands). See [plugin/README.md](plugin/README.md).
+
 ## Client setup
 
 Every client starts the same stdio command: `auten mcp-bridge` (or `npx -y @autenai/mcp`). If your app says it cannot find
