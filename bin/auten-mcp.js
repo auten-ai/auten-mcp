@@ -72,6 +72,8 @@ function installText() {
   ].join("\n");
 }
 
+const SUPPORTED_PROTOCOLS = ["2025-11-25", "2025-06-18", "2025-03-26", "2024-11-05"];
+
 function serveSetupOnly() {
   const send = (msg) => process.stdout.write(JSON.stringify(msg) + "\n");
   const tool = {
@@ -94,7 +96,10 @@ function serveSetupOnly() {
     switch (req.method) {
       case "initialize":
         return ok({
-          protocolVersion: req.params?.protocolVersion || "2025-06-18",
+          // Echo the client's version only if we speak it; otherwise answer our latest.
+          protocolVersion: SUPPORTED_PROTOCOLS.includes(req.params?.protocolVersion)
+            ? req.params.protocolVersion
+            : SUPPORTED_PROTOCOLS[0],
           capabilities: { tools: {} },
           serverInfo: { name: "auten", version: PKG.version },
           instructions: installText(),

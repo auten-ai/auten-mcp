@@ -12,7 +12,7 @@
       "name": "auten",
       "source": "./plugin",
       "description": "Computer use for Claude Code: click, type and read the screen on your Mac, Windows or Linux computer and your Android phone (beta), even in apps with no API.",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "homepage": "https://auten.ai/mcp",
       "license": "MIT"
     }
