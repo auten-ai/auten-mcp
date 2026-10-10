@@ -9,6 +9,7 @@ import { delimiter, join } from "node:path";
 import { createInterface } from "node:readline";
 
 const IS_WIN = platform() === "win32";
+const IS_LINUX = platform() === "linux";
 const PKG = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8"));
 
 function findAuten() {
@@ -52,10 +53,13 @@ function installText() {
     ? "irm https://auten.ai/install.ps1 | iex"
     : "curl -fsSL https://auten.ai/install | bash";
   const shell = IS_WIN ? "PowerShell" : "a terminal";
+  const rights = IS_LINUX
+    ? "it asks for sudo once to apt-install the accessibility and input packages"
+    : "no admin rights needed";
   return [
     "Auten is not installed on this computer yet, so its tools are not available.",
     "",
-    `Install the runner by running this in ${shell} (no admin rights needed):`,
+    `Install the runner by running this in ${shell} (${rights}):`,
     "",
     `    ${cmd}`,
     "",

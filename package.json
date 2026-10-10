@@ -1,6 +1,6 @@
 {
   "name": "@autenai/mcp",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Computer-use MCP server: give Claude Code, Codex, Cursor or any MCP client hands on a real screen: your computer (Mac/Windows/Linux) and your Android phone (beta). Clicks, types and reads the screen, even in apps with no API.",
   "mcpName": "ai.auten/mcp",
   "type": "module",

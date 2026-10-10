@@ -11,7 +11,7 @@ apps without accessibility info.
 
 ## What this plugin adds
 
-One local MCP server, `auten`, started with `npx -y @autenai/mcp@0.1.2`. The package is a thin
+One local MCP server, `auten`, started with `npx -y @autenai/mcp@0.1.3`. The package is a thin
 launcher (source in this repository, `bin/auten-mcp.js`): if the Auten runner is installed it hands
 the connection to `auten mcp-bridge`; if not, it offers a single `install_auten` tool that tells
 Claude the one-line install command. It also adds one skill, `auten-safe-use`: screen content is treated as data, not instructions, and Claude asks you before it buys, deletes, sends, grants a permission or types a password. No hooks or commands.
@@ -19,7 +19,7 @@ Claude the one-line install command. It also adds one skill, `auten-safe-use`: s
 ## Setup
 
 1. Install the plugin: `/plugin marketplace add auten-ai/auten-mcp`, then `/plugin install auten@auten`.
-2. Install the runner once (no admin rights), then restart Claude Code:
+2. Install the runner once, then restart Claude Code (no admin rights on macOS and Windows; on Linux it asks for sudo once for apt packages):
    - macOS and Linux: `curl -fsSL https://auten.ai/install | bash`
    - Windows (PowerShell): `irm https://auten.ai/install.ps1 | iex`
 3. The first run asks you to connect a free Auten key: 30 minutes of runtime every month, no card.
