@@ -1,0 +1,21 @@
+{
+  "name": "auten",
+  "displayName": "Auten",
+  "version": "0.1.2",
+  "description": "Computer use for Claude Code: click, type and read the screen on your Mac, Windows or Linux computer and your Android phone (beta), even in apps with no API. Learns a task once and replays it without the model.",
+  "author": {
+    "name": "Auten",
+    "email": "hello@auten.ai",
+    "url": "https://auten.ai"
+  },
+  "homepage": "https://auten.ai/mcp",
+  "repository": "https://github.com/auten-ai/auten-mcp",
+  "license": "MIT",
+  "keywords": ["computer-use", "desktop-automation", "android", "accessibility", "rpa", "mcp-server"],
+  "mcpServers": {
+    "auten": {
+      "command": "npx",
+      "args": ["-y", "@autenai/mcp@0.1.2"]
+    }
+  }
+}
