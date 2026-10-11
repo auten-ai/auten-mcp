@@ -90,6 +90,7 @@ claude mcp add -s user auten -- auten mcp-bridge
 
 **3. Ask in plain words.** For example: *"Open Figma, export the Hero frame as PNG to my Desktop"*
 or *"Go through the unread invoices in my mail and fill them into the accounting app"*.
+More prompts for computer and phone (beta) tasks: [examples/prompts.md](examples/prompts.md).
 
 ### Or run it through npx
 
