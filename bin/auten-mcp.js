@@ -15,6 +15,12 @@ const PKG = JSON.parse(readFileSync(new URL("../package.json", import.meta.url),
 function findAuten() {
   const fromEnv = process.env.AUTEN_BIN;
   if (fromEnv && existsSync(fromEnv)) return fromEnv;
+  // The installer's own location wins over PATH: another tool may also ship an `auten` binary.
+  const known = IS_WIN
+    ? [join(process.env.LOCALAPPDATA || join(homedir(), "AppData", "Local"), "auten", "bin", "auten.cmd")]
+    : [join(homedir(), ".local", "bin", "auten")];
+  const installed = known.find((p) => existsSync(p));
+  if (installed) return installed;
   const names = IS_WIN ? ["auten.cmd", "auten.exe", "auten.bat"] : ["auten"];
   for (const dir of (process.env.PATH || "").split(delimiter)) {
     if (!dir) continue;
@@ -23,10 +29,7 @@ function findAuten() {
       if (existsSync(p)) return p;
     }
   }
-  const known = IS_WIN
-    ? [join(process.env.LOCALAPPDATA || join(homedir(), "AppData", "Local"), "auten", "bin", "auten.cmd")]
-    : [join(homedir(), ".local", "bin", "auten")];
-  return known.find((p) => existsSync(p)) || null;
+  return null;
 }
 
 const bin = findAuten();
