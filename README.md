@@ -110,6 +110,11 @@ The "Add to Cursor" and "VS Code" buttons at the top add exactly this entry.
 claude mcp add -s user auten -- npx -y @autenai/mcp
 ```
 
+On Windows, if the client reports `spawn npx ENOENT`: npx is `npx.cmd` there, and some clients start
+servers without a shell. Use `"command": "cmd", "args": ["/c", "npx", "-y", "@autenai/mcp"]`
+(Claude Code: `claude mcp add -s user auten -- cmd /c npx -y @autenai/mcp`), or the direct
+`auten mcp-bridge` entry below.
+
 ### Or as a Claude Code plugin
 
 This repository is also a plugin marketplace. Inside Claude Code:

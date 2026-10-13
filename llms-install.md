@@ -92,6 +92,9 @@ numbered on-screen elements and the window's visible text. A good first request 
 - macOS clicks do nothing: Accessibility or Screen Recording permission was not granted to the
   terminal or app that starts Auten. The user runs `auten setup` again, or grants it in
   System Settings, Privacy & Security.
+- Windows, `spawn npx ENOENT`: the client starts servers without a shell and npx is `npx.cmd`.
+  Use `"command": "cmd"` with `"args": ["/c", "npx", "-y", "@autenai/mcp"]`, or the direct
+  `auten mcp-bridge` entry from Step 3.
 - Stop everything Auten started: `auten stop`.
 
 More: [README](README.md), https://auten.ai/mcp, questions to hello@auten.ai.
