@@ -172,6 +172,26 @@ or the same `mcpServers` entry in `~/.gemini/settings.json`.
 </details>
 
 <details>
+<summary><b>GitHub Copilot CLI</b></summary>
+
+```bash
+copilot mcp add auten -- auten mcp-bridge
+```
+
+or in `~/.copilot/mcp-config.json`:
+
+```json
+{
+  "mcpServers": {
+    "auten": { "type": "local", "command": "auten", "args": ["mcp-bridge"], "tools": ["*"] }
+  }
+}
+```
+
+Inside a session, `/mcp add` opens the same form (type STDIO, command `auten mcp-bridge`).
+</details>
+
+<details>
 <summary><b>Claude Desktop</b></summary>
 
 Settings, Developer, Edit Config
